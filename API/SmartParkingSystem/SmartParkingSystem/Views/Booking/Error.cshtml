@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Payment Failed";
+}
+
+<h2>Payment Failed</h2>
+
+<div class="alert alert-danger">
+    <p>We could not process your payment.</p>
+    <p>@ViewBag.ErrorMessage</p>
+</div>
+
+<a class="btn btn-warning" href="@Url.Action("Index", "CarParking")">Try Again</a>

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Payment Success";
+}
+
+<h2>Payment Successful!</h2>
+
+<div class="alert alert-success">
+    <p><strong>Order ID:</strong> @ViewBag.OrderId</p>
+    <p><strong>Transaction ID:</strong> @ViewBag.TransactionId</p>
+    <p><strong>Amount:</strong> Rs. @ViewBag.Amount</p>
+</div>
+
+<a class="btn btn-primary" href="@Url.Action("Index", "CarParking")">Back to List</a>

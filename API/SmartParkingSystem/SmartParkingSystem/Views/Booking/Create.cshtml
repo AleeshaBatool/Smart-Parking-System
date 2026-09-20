@@ -1,0 +1,171 @@
+﻿@model CarParking
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white d-flex align-items-center">
+                    <i class="bi bi-plus-square me-2" style="font-size:1.5rem;"></i>
+                    <h3 class="mb-0">Add New Parking Entry</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <div class="form-floating position-relative">
+                                    <select asp-for="parkingID" class="form-select" asp-items="ViewBag.parkingID" id="parkingID"></select>
+                                    <label asp-for="parkingID">
+                                        <i class="bi bi-building me-2 text-primary"></i>
+                                        @Html.DisplayNameFor(m => m.parkingID)
+                                    </label>
+                                </div>
+                            </div>
+
+                           
+
+
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating position-relative">
+                                    <input asp-for="carNumber" class="form-control" placeholder="Car Number" />
+                                    <label asp-for="carNumber">
+                                        <i class="bi bi-car-front me-2 text-primary"></i>
+                                        @Html.DisplayNameFor(m => m.carNumber)
+                                    </label>
+                                    <span asp-validation-for="carNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating position-relative">
+                                    <input asp-for="EasyPaisaPhoneNumber" class="form-control" placeholder="EasyPaisa Phone Number" maxlength="15" />
+                                    <label asp-for="EasyPaisaPhoneNumber">
+                                        <i class="bi bi-phone-vibrate me-2 text-primary"></i>
+                                        @Html.DisplayNameFor(m => m.EasyPaisaPhoneNumber)
+                                    </label>
+                                    <span asp-validation-for="EasyPaisaPhoneNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating position-relative">
+                                    <input asp-for="Email" class="form-control" placeholder="Email" />
+                                    <label asp-for="Email">
+                                        <i class="bi bi-envelope-at me-2 text-primary"></i>
+                                        @Html.DisplayNameFor(m => m.Email)
+                                    </label>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating position-relative">
+                                    <input asp-for="parkingStartTime" type="datetime-local" class="form-control" id="startTime" placeholder="Start Time" />
+                                    <label asp-for="parkingStartTime">
+                                        <i class="bi bi-clock-history me-2 text-primary"></i>
+                                        @Html.DisplayNameFor(m => m.parkingStartTime)
+                                    </label>
+                                    <span asp-validation-for="parkingStartTime" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating position-relative">
+                                    <input asp-for="parkingEndTime" type="datetime-local" class="form-control" id="endTime" placeholder="End Time" />
+                                    <label asp-for="parkingEndTime">
+                                        <i class="bi bi-clock me-2 text-primary"></i>
+                                        @Html.DisplayNameFor(m => m.parkingEndTime)
+                                    </label>
+                                    <span asp-validation-for="parkingEndTime" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-4">
+                                <div class="form-floating position-relative">
+                                    <input asp-for="totalAmount" class="form-control" id="totalAmount" placeholder="Total Amount" readonly />
+                                    <label asp-for="totalAmount">
+                                        <i class="bi bi-currency-dollar me-2 text-primary"></i>
+                                        @Html.DisplayNameFor(m => m.totalAmount)
+                                    </label>
+                                    <span asp-validation-for="totalAmount" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="bi bi-check-circle me-2"></i> Create Parking Entry
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Index" class="btn btn-link">
+                        <i class="bi bi-arrow-left-circle me-1"></i> Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        const parkingRates = @Html.Raw(Json.Serialize(ViewBag.ParkingRates));
+
+        function setTodayDateOnly(inputId) {
+            const input = document.getElementById(inputId);
+            const now = new Date();
+            const todayStr = now.toISOString().split('T')[0]; // e.g., "2025-05-20"
+            const timeStr = now.toTimeString().slice(0,5); // "HH:mm"
+
+            input.value = `${todayStr}T${timeStr}`;
+
+            // Prevent date from being changed
+            input.addEventListener("input", function () {
+                const selected = new Date(this.value);
+                const selectedTime = this.value.split('T')[1];
+                this.value = `${todayStr}T${selectedTime}`;
+            });
+        }
+
+        function calculateTotal() {
+            const parkingId = document.getElementById("parkingID").value;
+            const pricePerHour = parkingRates[parkingId];
+            const start = new Date(document.getElementById("startTime").value);
+            const end = new Date(document.getElementById("endTime").value);
+
+            if (start && end && !isNaN(start) && !isNaN(end) && end > start && pricePerHour) {
+                const durationMs = end - start;
+                const durationHrs = durationMs / (1000 * 60 * 60);
+                const total = Math.ceil(durationHrs * pricePerHour);
+                document.getElementById("totalAmount").value = total.toFixed(2);
+            } else {
+                document.getElementById("totalAmount").value = "";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            setTodayDateOnly("startTime");
+            setTodayDateOnly("endTime");
+
+            document.getElementById("startTime").addEventListener("change", calculateTotal);
+            document.getElementById("endTime").addEventListener("change", calculateTotal);
+            document.getElementById("parkingID").addEventListener("change", calculateTotal);
+        });
+    </script>
+}

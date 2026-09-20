@@ -1,0 +1,132 @@
+﻿@model CarParking
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<style>
+    .delete-header {
+        color: #dc3545;
+        font-weight: 700;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+        .delete-header i {
+            font-size: 2rem;
+        }
+
+    .delete-subtitle {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #6c757d;
+        margin-bottom: 30px;
+    }
+
+    dt {
+        font-weight: 600;
+        color: #dc3545;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.05rem;
+        margin-top: 15px;
+    }
+
+    dd {
+        margin-left: 0;
+        padding-left: 30px;
+        font-size: 1rem;
+        color: #212529;
+        margin-bottom: 10px;
+    }
+
+    .btn-delete {
+        background-color: #dc3545;
+        color: white;
+        padding: 12px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+        .btn-delete:hover {
+            background-color: #b02a37;
+            color: white;
+        }
+
+    .btn-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 20px;
+        font-weight: 600;
+        color: #6c757d;
+        border: 1px solid #6c757d;
+        padding: 10px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .btn-back:hover {
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+        }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="bg-white rounded-4 shadow p-4">
+                <div class="delete-header">
+                    <i class="bi bi-trash-fill"></i>
+                    <span>Delete Parking Entry</span>
+                </div>
+
+                <div class="delete-subtitle">
+                    Are you sure you want to delete this parking record?
+                </div>
+
+                <dl>
+                    <dt><i class="bi bi-car-front-fill"></i> Car Number</dt>
+                    <dd>@Html.DisplayFor(model => model.carNumber)</dd>
+
+                    <dt><i class="bi bi-clock-history"></i> Start Time</dt>
+                    <dd>@Html.DisplayFor(model => model.parkingStartTime)</dd>
+
+                    <dt><i class="bi bi-clock"></i> End Time</dt>
+                    <dd>@Html.DisplayFor(model => model.parkingEndTime)</dd>
+
+                    <dt><i class="bi bi-currency-dollar"></i> Total Amount</dt>
+                    <dd>@Html.DisplayFor(model => model.totalAmount)</dd>
+
+                    <dt><i class="bi bi-building"></i> Parking ID</dt>
+                    <dd>@Html.DisplayFor(model => model.Parking.id)</dd>
+                </dl>
+
+                <form asp-action="Delete" class="mt-4 d-flex flex-wrap align-items-center">
+                    <input type="hidden" asp-for="id" />
+                    <button type="submit" class="btn-delete mb-2">
+                        <i class="bi bi-trash"></i> Delete
+                    </button>
+                    <a asp-action="Index" class="btn-back mb-2">
+                        <i class="bi bi-arrow-left-circle"></i> Back to List
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

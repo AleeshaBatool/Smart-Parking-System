@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "SmartParkingSystem.Controllers.HomeController",
+    "Method": "ScanQrFromImage",
+    "RelativePath": "api/scan-qr",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartParkingSystem.Controllers.HomeController",
+    "Method": "ScanQrFromImageExit",
+    "RelativePath": "api/scan-qrexit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

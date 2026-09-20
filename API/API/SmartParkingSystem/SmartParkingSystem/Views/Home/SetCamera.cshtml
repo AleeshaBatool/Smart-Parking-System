@@ -1,0 +1,195 @@
+﻿@model SmartParkingSystem.Models.SetCamera
+
+@{
+    ViewData["Title"] = "Set Camera";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+    .settings-form {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #0d6efd;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .slider-label span {
+        font-weight: 600;
+        margin-left: 10px;
+        color: #0d6efd;
+    }
+</style>
+
+<div class="container">
+    <form asp-action="SetCamera" method="post" class="settings-form">
+        @Html.AntiForgeryToken()
+        <h2>ESP32-CAM Settings</h2>
+
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <!-- Sliders with Live Display -->
+        <div class="mb-3">
+            <label class="form-label slider-label">Brightness (-2 to 2): <span id="brightnessVal">@Model.Brightness</span></label>
+            <input asp-for="Brightness" class="form-range" type="range" min="-2" max="2" id="brightness" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label slider-label">Contrast (-2 to 2): <span id="contrastVal">@Model.Contrast</span></label>
+            <input asp-for="Contrast" class="form-range" type="range" min="-2" max="2" id="contrast" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label slider-label">Saturation (-2 to 2): <span id="saturationVal">@Model.Saturation</span></label>
+            <input asp-for="Saturation" class="form-range" type="range" min="-2" max="2" id="saturation" />
+        </div>
+
+        <!-- Select -->
+        <div class="mb-3">
+            <label asp-for="SpecialEffect" class="form-label">Special Effect</label>
+            <select asp-for="SpecialEffect" class="form-select">
+                <option value="0">No Effect</option>
+                <option value="1">Negative</option>
+                <option value="2">Grayscale</option>
+                <option value="3">Red Tint</option>
+                <option value="4">Green Tint</option>
+                <option value="5">Blue Tint</option>
+                <option value="6">Sepia</option>
+            </select>
+        </div>
+
+        <!-- Toggles - Manually written to avoid asp-for errors -->
+        <div class="form-check form-switch mb-2">
+            <input asp-for="WhiteBalance" class="form-check-input" />
+            <label asp-for="WhiteBalance" class="form-check-label">White Balance</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="AwbGain" class="form-check-input" />
+            <label asp-for="AwbGain" class="form-check-label">AWB Gain</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="ExposureCtrl" class="form-check-input" />
+            <label asp-for="ExposureCtrl" class="form-check-label">Exposure Control</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="Aec2" class="form-check-input" />
+            <label asp-for="Aec2" class="form-check-label">AEC 2</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="GainCtrl" class="form-check-input" />
+            <label asp-for="GainCtrl" class="form-check-label">Gain Control</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="Bpc" class="form-check-input" />
+            <label asp-for="Bpc" class="form-check-label">BPC</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="Wpc" class="form-check-input" />
+            <label asp-for="Wpc" class="form-check-label">WPC</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="RawGma" class="form-check-input" />
+            <label asp-for="RawGma" class="form-check-label">Raw GMA</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="Lenc" class="form-check-input" />
+            <label asp-for="Lenc" class="form-check-label">LENC</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="Hmirror" class="form-check-input" />
+            <label asp-for="Hmirror" class="form-check-label">H Mirror</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="Vflip" class="form-check-input" />
+            <label asp-for="Vflip" class="form-check-label">V Flip</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="Dcw" class="form-check-input" />
+            <label asp-for="Dcw" class="form-check-label">DCW</label>
+        </div>
+        <div class="form-check form-switch mb-2">
+            <input asp-for="Colorbar" class="form-check-input" />
+            <label asp-for="Colorbar" class="form-check-label">Colorbar</label>
+        </div>
+
+        <!-- Select Inputs -->
+        <div class="mb-3">
+            <label asp-for="WbMode" class="form-label">White Balance Mode</label>
+            <select asp-for="WbMode" class="form-select">
+                <option value="0">Auto</option>
+                <option value="1">Sunny</option>
+                <option value="2">Cloudy</option>
+                <option value="3">Office</option>
+                <option value="4">Home</option>
+            </select>
+        </div>
+
+        <!-- More Sliders -->
+        <div class="mb-3">
+            <label class="form-label slider-label">AE Level (-2 to 2): <span id="aeLevelVal">@Model.AeLevel</span></label>
+            <input asp-for="AeLevel" class="form-range" type="range" min="-2" max="2" id="aeLevel" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label slider-label">AEC Value (0-1200): <span id="aecValueVal">@Model.AecValue</span></label>
+            <input asp-for="AecValue" class="form-range" type="range" min="0" max="1200" step="10" id="aecValue" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label slider-label">AGC Gain (0-30): <span id="agcGainVal">@Model.AgcGain</span></label>
+            <input asp-for="AgcGain" class="form-range" type="range" min="0" max="30" id="agcGain" />
+        </div>
+
+        <!-- Dropdown for Gainceiling -->
+        <div class="mb-3">
+            <label asp-for="Gainceiling" class="form-label">Gain Ceiling (0-6)</label>
+            <select asp-for="Gainceiling" class="form-select">
+                @for (int i = 0; i <= 6; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 mt-4">Apply Settings</button>
+
+    </form>
+    @if (ViewData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @ViewData["SuccessMessage"]
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        const sliders = [
+            { id: "brightness", span: "brightnessVal" },
+            { id: "contrast", span: "contrastVal" },
+            { id: "saturation", span: "saturationVal" },
+            { id: "aeLevel", span: "aeLevelVal" },
+            { id: "aecValue", span: "aecValueVal" },
+            { id: "agcGain", span: "agcGainVal" },
+        ];
+
+        sliders.forEach(sl => {
+            const input = document.getElementById(sl.id);
+            const span = document.getElementById(sl.span);
+            if (input && span) {
+                input.addEventListener("input", () => {
+                    span.textContent = input.value;
+                });
+            }
+        });
+    </script>
+}

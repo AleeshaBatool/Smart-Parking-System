@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Smart Parking Dashboard";
+}
+@model List<ParkingWithStatusViewModel>
+@* Razor-safe CSS *@
+
+<link rel="stylesheet" href="~/css/dashboard.css" />
+
+
+<!-- Dashboard Stats -->
+<div class="dashboard">
+    <div class="card total">
+        <div class="icon">🚗</div>
+        <strong>Total Parking</strong><br />
+        @ViewBag.TotalParking
+    </div>
+    <div class="card occupied">
+        <div class="icon">🅿️</div>
+        <strong>Occupied</strong><br />
+        @ViewBag.OccupiedParking
+    </div>
+    <div class="card time">
+        <div class="icon">⏱️</div>
+        <strong>Today's Time</strong><br />
+        @String.Format("{0:0.00}", ViewBag.TodayTime) hrs
+    </div>
+    <div class="card amount">
+        <div class="icon">💰</div>
+        <strong>Today's Amount</strong><br />
+        $@String.Format("{0:0.00}", ViewBag.TodayAmount)
+    </div>
+</div>
+
+<!-- Parking Status Section -->
+<h3>Parking Status</h3>
+<div id="parkingStatusContainer">
+    @await Html.PartialAsync("_ParkingStatus", Model)
+</div>
+
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function refreshParkingStatus() {
+            $.ajax({
+                url: '/Home/GetParkingStatusPartial',
+                method: 'GET',
+                success: function (data) {
+                    $('#parkingStatusContainer').html(data);
+                },
+                error: function () {
+                    console.warn("Failed to load parking status.");
+                }
+            });
+        }
+
+        // Initial load
+        refreshParkingStatus();
+
+        // Refresh every 10 seconds
+        setInterval(refreshParkingStatus, 5000);
+    </script>
+}

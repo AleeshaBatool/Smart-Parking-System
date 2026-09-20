@@ -1,0 +1,204 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\helper\\easypaisarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\helper\\easypaisarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\views\\booking\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\booking\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\controllers\\mqttcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\controllers\\mqttcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\views\\parkings\\extrapayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\parkings\\extrapayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\views\\parkings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\parkings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\dell\\desktop\\smartparkingsystem\\api\\smartparkingsystem\\smartparkingsystem\\views\\booking\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\booking\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\appsettings.json",
+              "RelativeToolTip": "SmartParkingSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-22T13:52:40.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExtraPayment.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Parkings\\ExtraPayment.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Parkings\\ExtraPayment.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Parkings\\ExtraPayment.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Parkings\\ExtraPayment.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T13:21:17.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Parkings\\Create.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Parkings\\Create.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Parkings\\Create.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Parkings\\Create.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAwwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T13:19:15.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Program.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:24:28.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MqttController.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\MqttController.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Controllers\\MqttController.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\MqttController.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Controllers\\MqttController.cs",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAjwBUBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:12:14.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T11:20:02.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Error.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Booking\\Error.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Error.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Booking\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T11:10:07.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAD4vxoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T11:07:02.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EasyPaisaRequest.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Helper\\EasyPaisaRequest.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Helper\\EasyPaisaRequest.cs",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Helper\\EasyPaisaRequest.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Helper\\EasyPaisaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:42:42.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Success.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Booking\\Success.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Success.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Booking\\Success.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T10:58:27.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Create.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Booking\\Create.cshtml",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\SmartParkingSystem\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Create.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Booking\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T10:58:23.941Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

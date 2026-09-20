@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\controllers\\mqttcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\controllers\\mqttcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\views\\parkings\\extrapayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\parkings\\extrapayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\views\\parkings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\parkings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\views\\booking\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\booking\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|c:\\users\\awais\\onedrive\\desktop\\api\\smartparkingsystem\\smartparkingsystem\\views\\booking\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFCF4707-5AC7-4E4A-8D9F-2E27A87CFBDD}|SmartParkingSystem\\SmartParkingSystem.csproj|solutionrelative:smartparkingsystem\\views\\booking\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExtraPayment.cshtml",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Parkings\\ExtraPayment.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Parkings\\ExtraPayment.cshtml",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Parkings\\ExtraPayment.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Parkings\\ExtraPayment.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T13:21:17.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Parkings\\Create.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Parkings\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Parkings\\Create.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Parkings\\Create.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAwwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T13:19:15.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Program.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:24:28.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MqttController.cs",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\MqttController.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Controllers\\MqttController.cs",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\MqttController.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Controllers\\MqttController.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAewOkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:12:14.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwG0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T11:20:02.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Error.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Booking\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Error.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Booking\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T11:10:07.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SmartParkingSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAADwvzwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T11:07:02.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Success.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Booking\\Success.cshtml",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Success.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Booking\\Success.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T10:58:27.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Create.cshtml",
+              "RelativeDocumentMoniker": "SmartParkingSystem\\Views\\Booking\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Awais\\OneDrive\\Desktop\\API\\SmartParkingSystem\\SmartParkingSystem\\Views\\Booking\\Create.cshtml",
+              "RelativeToolTip": "SmartParkingSystem\\Views\\Booking\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T10:58:23.941Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

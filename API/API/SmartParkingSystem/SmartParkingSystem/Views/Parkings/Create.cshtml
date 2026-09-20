@@ -1,0 +1,126 @@
+﻿
+
+@model SmartParkingSystem.Models.Parking
+
+@{
+    ViewData["Title"] = "Create Parking Spot";
+}
+
+<!-- Custom Styling -->
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .form-container {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 30px;
+        margin-top: 40px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #0d6efd;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    .input-group-text {
+        background-color: #e9ecef;
+        font-weight: 500;
+    }
+
+    .btn-submit {
+        background-color: #0d6efd;
+        border: none;
+        padding: 10px 25px;
+        font-weight: 500;
+        border-radius: 8px;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+        .btn-submit:hover {
+            background-color: #0b5ed7;
+        }
+
+    .back-link {
+        margin-top: 20px;
+        display: inline-block;
+    }
+</style>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-container">
+                <h2><i class="bi bi-plus-circle-fill"></i> Create Parking Spot</h2>
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <!-- Name Input -->
+                    <div class="mb-3">
+                        <label asp-for="name" class="form-label"></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-car-front-fill"></i></span>
+                            <input asp-for="name" class="form-control" />
+                        </div>
+                        <span asp-validation-for="name" class="text-danger"></span>
+                    </div>
+
+                    <!-- Parking Type Dropdown -->
+                    <div class="mb-3">
+                        <label asp-for="Parkingtype" class="form-label">Parking Type</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-diagram-3-fill"></i></span>
+                            <select asp-for="Parkingtype" class="form-select">
+                                <option value="">-- Select Type --</option>
+                                <option value="Open">Open</option>
+                                <option value="Covered">Covered</option>
+                                <option value="VIP">VIP</option>
+                            </select>
+                        </div>
+                        <span asp-validation-for="Parkingtype" class="text-danger"></span>
+                    </div>
+
+                    <!-- Price Per Hour Input -->
+                    <div class="mb-3">
+                        <label asp-for="priceperhour" class="form-label">Price Per Hour</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-currency-dollar"></i></span>
+                            <input asp-for="priceperhour" type="number" step="0.01" min="0" class="form-control" />
+                        </div>
+                        <span asp-validation-for="priceperhour" class="text-danger"></span>
+                    </div>
+
+                    <!-- IsOccupied Checkbox -->
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" asp-for="isOccupied" />
+                        <label class="form-check-label">
+                            @Html.DisplayNameFor(model => model.isOccupied)
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-submit"><i class="bi bi-check-circle-fill"></i> Create</button>
+                </form>
+
+                <a asp-action="Index" class="back-link text-decoration-none text-primary mt-3 d-block">← Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

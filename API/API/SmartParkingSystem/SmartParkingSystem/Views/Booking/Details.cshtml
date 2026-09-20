@@ -1,0 +1,134 @@
+﻿@model CarParking
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<style>
+    .details-header {
+        color: #0d6efd;
+        font-weight: 700;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+        .details-header i {
+            font-size: 2rem;
+        }
+
+    dt {
+        font-weight: 600;
+        color: #0d6efd;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.05rem;
+        margin-top: 15px;
+    }
+
+    dd {
+        margin-left: 0;
+        padding-left: 30px;
+        font-size: 1rem;
+        color: #212529;
+        margin-bottom: 10px;
+    }
+
+    .btn-primary-custom {
+        background-color: #0d6efd;
+        color: white;
+        padding: 12px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+        .btn-primary-custom:hover {
+            background-color: #084298;
+            color: white;
+            text-decoration: none;
+        }
+
+    .btn-secondary-custom {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        color: #6c757d;
+        border: 1px solid #6c757d;
+        padding: 10px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+        .btn-secondary-custom:hover {
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+        }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="bg-white rounded-4 shadow p-4">
+                <div class="details-header">
+                    <i class="bi bi-info-circle-fill"></i>
+                    <span>Parking Details</span>
+                </div>
+
+                <dl>
+                    <dt><i class="bi bi-car-front-fill"></i> Car Number</dt>
+                    <dd>@Html.DisplayFor(model => model.carNumber)</dd>
+
+                    <dt><i class="bi bi-clock-history"></i> Start Time</dt>
+                    <dd>@Html.DisplayFor(model => model.parkingStartTime)</dd>
+
+                    <dt><i class="bi bi-clock"></i> End Time</dt>
+                    <dd>@Html.DisplayFor(model => model.parkingEndTime)</dd>
+
+                    <dt><i class="bi bi-currency-dollar"></i> Total Amount</dt>
+                    <dd>@Html.DisplayFor(model => model.totalAmount)</dd>
+
+                    <dt><i class="bi bi-building"></i> Parking ID</dt>
+                    <dd>@Html.DisplayFor(model => model.Parking.id)</dd>
+
+                    <dt><i class="bi bi-phone-vibrate"></i> EasyPaisa Phone Number</dt>
+                    <dd>@Html.DisplayFor(model => model.EasyPaisaPhoneNumber)</dd>
+
+                    <!-- New Email Field -->
+                    <dt><i class="bi bi-envelope-fill"></i> Email</dt>
+                    <dd>@Html.DisplayFor(model => model.Email)</dd>
+                </dl>
+
+
+
+                <div class="mt-4 d-flex flex-wrap">
+                    <a asp-action="Edit" asp-route-id="@Model?.id" class="btn-primary-custom">
+                        <i class="bi bi-pencil-fill"></i> Edit
+                    </a>
+
+                    <a asp-action="Index" class="btn-secondary-custom">
+                        <i class="bi bi-arrow-left-circle"></i> Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

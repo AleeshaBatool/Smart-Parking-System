@@ -1,0 +1,39 @@
+﻿@model List<ParkingWithStatusViewModel>
+
+<div class="parking-grid">
+    @foreach (var item in Model)
+    {
+        var p = item.Parking;
+        var cp = item.CurrentCarParking;
+
+        <div class="parking-slot">
+            <strong>@p.name</strong>
+            @if (p.isOccupied )
+            {
+                if (p.Parkingtype.ToLower() == "car")
+                {
+                    <img src="~/images/car.png" alt="Car" />
+                }
+                else if (p.Parkingtype.ToLower() == "bike")
+                {
+                    <img src="~/images/bike.png" alt="Bike" />
+                }
+                @if(cp !=null)
+                {
+                <div>
+                    <small>Start: @cp?.parkingStartTime.Value.ToString("g")</small><br />
+                    @{
+                        var elapsedHours = (DateTime.Now - cp?.parkingStartTime).Value.TotalHours;
+                        var amountSoFar = Math.Abs(elapsedHours * p.priceperhour);
+                    }
+                    <small>Amount: $@String.Format("{0:0.00}", amountSoFar)</small>
+                </div>
+                }
+            }
+            else
+            {
+                <img src="~/images/empty.png" alt="Empty Slot" />
+            }
+        </div>
+    }
+</div>
